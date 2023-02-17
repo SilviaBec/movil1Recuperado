@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project/widgets/favoritos.dart';
 
 class InformationWidget extends StatelessWidget {
   final String nombre;
@@ -27,8 +28,7 @@ final int numeroFavoritos;
                 Text(ubicacion)
               ],),),
               
-              const Icon(Icons.star_border),
-              Text("$numeroFavoritos"),
+              FavoritosWidget(numeroFavoritos: numeroFavoritos,)
             ],);
   }
 }
